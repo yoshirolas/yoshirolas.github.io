@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zombie Rush</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/intro.css">
+  </head>
+  <body>
+    <div class="intro">
+      <div class="wrapper">
+        <div class="zombie">
+          <div class="zombie__head">
+            <div class="zombie__brain"></div>
+            <div class="zombie__cheeks"></div>
+            <div class="zombie__chin"></div>
+            <div class="zombie__eyes">
+              <div class="eye left">
+                <div class="eyebrow"></div>
+              </div>
+              <div class="eye right">
+                <div class="eyebrow"></div>
+              </div>
+            </div>
+            <div class="zombie__nose"></div>
+            <div class="zombie__mouth">
+              <div class="tooth">
+                <div class="tooth__top"></div>
+                <div class="tooth__bottom"></div>
+              </div>
+            </div>
+          </div>
+          <div class="zombie__body">
+            <div class="zombie__chest">
+              <div class="zombie__arms">
+                <div class="arm left">
+                  <div class="arm__bone"></div>
+                  <div class="arm__sleeve"></div>
+                </div>
+                <div class="arm right">
+                  <div class="arm__details">
+                    <div class="arm__biceps"></div>
+                    <div class="arm__forearm"></div>
+                    <div class="hands">
+                      <div class="fingers">
+                        <div class="finger thumb"></div>
+                        <div class="finger middle"></div>
+                        <div class="finger index"></div>
+                        <div class="finger ring"></div>
+                        <div class="finger pinky"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="arm__sleeve"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ground">
+          <div class="ground__hole"></div>
+          <div class="ground__rocks">
+            <div class="rock"></div>
+            <div class="rock"></div>
+            <div class="rock"></div>
+            <div class="rock"></div>
+            <div class="rock"></div>
+            <div class="rock"></div>
+            <div class="rock"></div>
+            <div class="rock"></div>
+            <div class="rock"></div>
+            <div class="rock"></div>
+            <div class="rock"></div>
+            <div class="rock"></div>
+            <div class="rock"></div>
+            <div class="rock"></div>
+            <div class="rock"></div>
+          </div>
+          <div class="tomb">
+            <div class="tomb__info">
+              <h1 class="headers">RIP</h1>
+              <h4 class="headers">"A devs who drank a lot of coffee."</h4>
+              <h5 class="headers"><a href="https://github.com/yoshirolas">Alexey</a> & <a href="https://github.com/grinzzly">Grinzzly</a></h5>
+            </div>
+          </div>
+          <div class="brains-comic-box">
+            <h1 class="brains__text">Braaains !</h1>
+          </div>
+        </div>
+        <div class="start-button">
+          <img src="images/brains.svg">
+          <h1 class="start-game-text">Eat Brains!</h1>
+        </div>
+      </div>
+
+      <div class="about-button">
+        <h2>ABOUT GAME</h2>  
+        <div class="about-button__grass">
+          <img src="images/grass.png">
+        </div>
+      </div>
+      <div class="about-popUp">
+        <div class="logo-container">
+          <div class="logo"></div>
+        </div>
+        <div class="text-container">
+          <h3>Are you hungry?</h3>
+          <p>You can't resist a tasty cerebral snack and now you are craving for yummy Brains.
+            Test your skills in an action adventure where you must eat all the Brains.
+            This game is very fun and entertainment.</p>
+          <h3>How to play:</h3>
+          <p>The Brains are hiding from you everywhere. You have to find them all to unlock
+            the next challenging level. Be careful with lava. It can kill you..again!</p>
+          <h3>Bon Appetit!</h3>
+        </div>
+      </div>
+  
+      <div class="control-button">
+        <h2>CONTROL</h2>
+        <div class="control-button__grass">
+          <img src="images/grass.png">
+        </div>
+      </div>  
+      <div class="control-popUp">
+        <article>
+          <figure>
+            <img src="images/screenshot-run.png">
+          </figure>
+          <figcaption>Running</figcaption>
+        </article>  
+        <article>
+          <figure>
+            <img src="images/screenshot-jump.png">
+          </figure>
+          <figcaption>Jumping</figcaption>
+        </article> 
+      </div>
+    </div>
+
+    <div id="brains" class="eaten">0</div>
+    <div id="level" class="currentLevel">Level 1</div>
+    <div class="backgroundImg"></div>
+
+    <div class="popup-container" id="lose-popup-container-id">
+      <div class="popup-content">
+        <h2 class="popup-header">You are DEAD!..again</h2>
+        <p>Don't be upset. Just try again</p>
+        <h2 class="scores">Brains has been eaten: <span id="lose-popup-score"></span></h2>
+        <div class="restart-button" id="restart-level-button-id">
+          <img src="images/lightBrain.png" class="restart-brain">
+          <p class="restart-text">Restart The Game</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-container" id="win-popup-container-id">
+      <div class="popup-content">
+        <h2 class="popup-header">Congratulations! You are winner!</h2>
+        <p>You ate all brains. Are you still hungry?</p>
+        <h2 class="scores">Brains has been eaten:<span id="win-popup-score"></span></h2>
+        <div class="restart-button" id="restart-game-button-id">
+          <img src="images/lightBrain.png" class="restart-brain">
+          <p class="restart-text">Restart The Game</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="build/bundle.js"></script>
+  </body>
+</html>
