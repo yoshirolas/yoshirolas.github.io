@@ -1,0 +1,401 @@
+* {
+	margin: 0 auto;
+	padding: 0;
+}
+
+@font-face {
+	font-family: Bebas;
+	src: url('../fonts/bebas.ttf')
+}
+
+@font-face {
+	font-family: StMaria;
+	src: url('../fonts/stmarie-thin.otf')
+}
+
+@font-face {
+	font-family: Caliblri;
+	src: url('../fonts/calibri.ttf')
+}
+
+body {
+	width: 1600px;
+	height: 100%;
+}
+
+.content {
+	min-height: calc(100vh - 84px);
+}
+
+header {
+	width: 1600px;
+	height: 130px;
+}
+
+.header-wide-container {
+	position: fixed;
+	background-color: white;
+	width: 1600px;
+	height: 130px;
+}
+
+.header-container {
+	width: 1200px;
+	height: 130px;
+}
+
+.logo	{
+	width: 300px;
+	height: 130px;
+	float: left;
+}
+
+.logo img {
+	float: left;
+	padding: 5px 18px;
+	margin-right: 38px;
+}
+
+.logo h1 {
+	display: block;
+	padding: 13px;
+	font-family: Calibri;
+	font-size: 37px;
+	color:	#fb9c06;
+}
+
+.logo h1 span {
+	font-family: Bebas;
+	font-size: 37px;
+	color: #6e6d6b;
+}
+
+nav {
+	width: 600px;
+	height: 130px;
+	float: right;
+	font-size: 0;
+}
+
+ul li {
+	display: inline-block;
+	width: 80px;
+    padding-right: 25px;
+    padding-left: 17px;
+}
+
+ul li:last-child {
+	padding-right: 0;
+}
+
+nav h4 {
+	padding-top: 52px;
+	font-family: Calibri;
+	font-size: 22px;
+	text-align: center;
+	color: #6e6d6b;
+}
+
+.home {
+	margin: 24px 0 0 0;
+    background: url('../images/sprites.png') -503px -37px;
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+}
+
+.about {
+    margin: 24px 0 0 0;
+	background: url('../images/sprites.png') -9px -36px;
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+}
+
+.work {
+	margin: 24px 0 0 0;
+	background: url('../images/sprites.png') -248px -36px;
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+}
+
+.blog {
+	margin: 24px 0 0 0;
+	background: url('../images/sprites.png') -122px -34px;
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+}
+
+.contact {
+	margin: 24px 0 0 0;
+	background: url('../images/sprites.png') -371px -32px;
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+}
+
+.home:hover, .contact:hover, .blog:hover, .work:hover, .about:hover{
+	background-color: rgba(251,156,6,0.1);
+}
+
+.slider {
+	display: block;
+	margin: 0 auto;
+	width: 1600px;
+	height: 400px;
+	background-image: url('../images/big-orange-bg.png');
+	border-bottom: solid 4px rgba(251,156,6,0.8);
+	border-top: solid 4px rgba(252,186,80,0.8);
+}
+
+hr {
+	margin: 0;
+	height: 2px;
+	border: none;
+	background-color: #f2f2f2;
+	width: 1600px;
+}
+
+.container	{
+	width: 1200px;
+	height: 100%;
+}
+
+.container h2 {
+	font-family: Bebas;
+	font-size: 37px;
+	text-align: center;
+}
+
+.rabbits {
+	width: 380px;
+	height: 66px;
+	background-color: rgba(0,0,0,0.7);
+	margin: 128px 10px 23px 19px;
+	border: 1px solid rgba(0,0,0,0.3);
+	background-clip: padding-box;
+}
+
+.rabbits h2 {
+	color: #fb9c06;
+	line-height: 1.7;
+}
+
+.oranges {
+	width: 395px;
+	height: 75px;
+	background-color: rgba(275,185,18,0.7);
+	margin: 0px 9px;
+	border: 1px solid rgba(275,185,18,0.3);
+	background-clip: padding-box;
+}
+
+.oranges h2 {
+	color: #6e6d6b;
+	line-height: 2;
+}
+
+section {
+	margin: 0 auto;
+	width: 1200px;
+	height: 215px;
+}
+
+article {
+	width: 300px;
+	height: 215px;
+	font-family: Calibri;
+	font-size: 15px;
+	line-height: 159%;
+	font-weight: 600;
+	color: black;
+	float: left;
+}
+
+article div {
+	height: 140px;
+	padding: 25px;
+}
+
+article	a {
+	text-decoration: none;
+	color: #ffac00;
+}
+
+article span {
+	display: block;
+	text-align: right;
+	font-style: italic;
+	color: #ffac00;
+	font-size: 17px;
+}
+
+main {
+	width: 1200px;
+	height: auto;
+}
+
+main section {
+	margin: 0 auto;
+	padding: 0;
+	height: auto;
+}
+
+main h2 {
+	margin: 14px 0;
+	font-family: StMaria;
+	font-size: 40px;
+	color: #ff9c00;
+	text-decoration: underline;
+	text-align: center;
+	font-weight: 200;
+	letter-spacing: 1px;
+}
+
+.team-container {
+	float: left;
+	width: 400px;
+	height: 526px;
+}
+
+.team-container h3 {
+	margin: 26px 0;
+	font-family: Calibri;
+	font-size: 22px;
+	color: #6e6d6b;
+	text-align: center;
+}
+
+.team-container h3 span {
+	padding: 0;
+	font-style: normal;
+	display: inline;
+	color: #fb9c06;
+	font-family: Calibri;
+	font-size: 22px;
+}
+
+.team-hoof {
+	width: 300px;
+	height: 500px;
+	overflow: hidden;
+}
+
+.team-nibs {
+	width: 300px;
+	height: 500px;
+	margin: 0 50px;
+	overflow: hidden;
+}
+
+.team-squawk {
+	float: right;
+	width: 300px;
+	height: 500px;
+	overflow: hidden;
+}
+
+figure img{
+	border-radius: 100%;
+	border: 10px solid #ffb540;
+}
+
+figcaption {
+	padding: 30px;
+	font-family: Calibri;
+	font-size: 15px;
+	font-weight: 600;
+	color: #333333;
+}
+
+.clear {
+	clear: left;
+}
+
+.message {
+	width: 1200px;
+	height: 468px;
+}
+
+form {
+	margin: 66px 0;
+	border: none;
+	padding: 0;
+}
+
+form div {
+	width: 1200px;
+	height: 50px;
+    margin-top: 7px;
+    margin-bottom: 20px;
+}
+
+form label {
+	width: 100px;
+	font-family: StMaria;
+	font-size: 24px;
+	color: #fcaa43;
+}
+
+input {
+	width: 1068px;
+	height: 34px;
+	float: right;
+	box-shadow: inset 4px 2px 1px 0px rgba(210,208,207,1);
+	border: none;
+}
+
+textarea {
+	width: 1068px;
+	float: right;
+	box-shadow: inset 4px 2px 1px 0px rgba(210,208,207,1);
+	border: none;
+	resize: none;
+}
+
+input:focus, textarea:focus {
+	box-shadow: inset 0px 0px 1px 3px rgba(251,156,6,1);
+}
+
+button {
+    margin-right: 31px;
+    margin-top: 23px;
+	height: 46px;
+	width: 176px;
+	background-color: #fb9c06;
+	text-align: center;
+	color: white;
+	font-family: StMaria;
+	font-size: 30px;
+	border: 1px solid #fcb94f;
+	box-shadow: 0px 0px 0px 0px #cc830f;
+	cursor: pointer;
+	float: right;
+}
+
+button:hover {
+	box-shadow: 0px 2px 0px 0px #cc830f;
+}
+
+footer {
+	height: 84px;
+}
+
+footer div {
+  	width: 100%;
+  	height: 70px;
+  	background-color: #fb9c06;
+}
+
+footer p {
+	font-family: StMaria;
+	font-size: 33px;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	padding: 13px;
+	box-shadow: 0px 3px 2px 0px rgba(204,131,15,1);
+}
+
