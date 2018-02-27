@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Match-Match-Game</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="js/index.js" async></script>
+</head>
+<body>
+	<header>
+		<nav class="settings" id="settings-id">
+			<h2>Settings</h2>
+		</nav>
+		<div class="timer-container">
+			<div class="timer-icon">
+				<img src="images/timer-icon.png">
+			</div>
+		</div>
+		<div class="timer-count">
+			<span id="timer-count-id">0:0:0</span>	
+		</div>
+		<div class="restart-game">
+			<div class="restart-game-image-container" id="restart-game-image-container-id">	
+			</div>
+		</div>
+		<div class="help" id="help-id">
+			<h2>Help</h2>
+		</div>
+	</header>
+	<main>
+		<div class="settings-popup-container" id="settings-popup-container-id">
+   			<div class="settings-popup-content">
+   				<div class="settings-popup-exit" id="settings-popup-exit-id"></div>
+        		<h2>Game difficulty</h2>
+        		<div class="set-difficulty" id="set-difficulty-id">
+        			<div class="normal-difficulty">normal</div>
+        			<div class="hard-difficulty">hard</div>
+        		</div>
+        		<h2>Card color</h2>
+        		<div class="set-card-color" id="set-card-color-id">
+        			<div class="card-color-1"></div>
+        			<div class="card-color-2"></div>
+        		</div>
+    		</div>
+		</div>
+		<div class="help-popup-container" id="help-popup-container-id">
+   			<div class="help-popup-content">
+   				<div class="help-popup-exit" id="help-popup-exit-id"></div>
+        		<h2>Welcome to Match-Match-Game!</h2>
+        		<p>You have to rotate cards and find match images. Every pair of them will disapear. But if you have a pair of different images they will turn back.
+				Do find all matches to win the game.</p>
+				<h3>Settings</h3>
+				<p>In the settings you can choose game difficulty and change style of cards.</p>
+				<h3>Timer</h3>
+				<p>Timer in the top is helpful for monitoring your progress.</p>
+				<h3>New game</h3>
+				<p>You can start new game whenever you want.</p>
+    		</div>
+		</div>
+		<div class="win-popup-container" id="win-popup-container-id">
+			<div class="win-popup-content">
+				<div class="win-popup-exit" id="win-popup-exit-id"></div>
+				<h2>Congratulations! You are winner!</h2>
+				<p>You found all matches. Now you can try hard game level or improve total time.</p>
+				<h2>Total time:</h2>
+				<h1 id="total-time-id"></h1>		
+			</div>
+		</div>
+		<section class="card-field" id="card-field-id">
+			<article class="card">
+				<div class="front"></div>
+				<div class="back"></div>
+			</article>
+			<article class="card">
+				<div class="front"></div>
+				<div class="back"></div>
+			</article>	
+			<article class="card">
+				<div class="front"></div>
+				<div class="back"></div>
+			</article>
+			<article class="card">
+				<div class="front"></div>
+				<div class="back"></div>
+			</article>	
+			<article class="card">
+				<div class="front"></div>
+				<div class="back"></div>
+			</article>
+			<article class="card">
+				<div class="front"></div>
+				<div class="back"></div>
+			</article>	
+			<article class="card">
+				<div class="front"></div>
+				<div class="back"></div>
+			</article>
+			<article class="card">
+				<div class="front"></div>
+				<div class="back"></div>
+			</article>	
+			<article class="card">
+				<div class="front"></div>
+				<div class="back"></div>
+			</article>
+			<article class="card">
+				<div class="front"></div>
+				<div class="back"></div>
+			</article>	
+			<article class="card">
+				<div class="front"></div>
+				<div class="back"></div>
+			</article>
+			<article class="card">
+				<div class="front"></div>
+				<div class="back"></div>
+			</article>
+			<article class="card">
+				<div class="front"></div>
+				<div class="back"></div>
+			</article>
+			<article class="card">
+				<div class="front"></div>
+				<div class="back"></div>
+			</article>	
+			<article class="card">
+				<div class="front"></div>
+				<div class="back"></div>
+			</article>
+			<article class="card">
+				<div class="front"></div>
+				<div class="back"></div>
+			</article>
+			<article class="card">	
+				<div class="front"></div>
+				<div class="back"></div>
+			</article>	
+			<article class="card">
+				<div class="front"></div>
+				<div class="back"></div>
+			</article>
+			<article class="card">
+				<div class="front"></div>
+				<div class="back"></div>
+			</article>	
+			<article class="card">
+				<div class="front"></div>
+				<div class="back"></div>
+			</article>
+			<article class="card">
+				<div class="front"></div>
+				<div class="back"></div>
+			</article>
+			<article class="card">
+				<div class="front"></div>
+				<div class="back"></div>
+			</article>
+			<article class="card">
+				<div class="front"></div>
+				<div class="back"></div>
+			</article>	
+			<article class="card">
+				<div class="front"></div>
+				<div class="back"></div>
+			</article>
+		</section>
+	</main>
+</body>
+</html>

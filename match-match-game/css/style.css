@@ -1,0 +1,382 @@
+* {
+	margin: 0 auto;
+	padding: 0;
+	user-select: none;
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/roboto-regular.ttf'); 
+}
+
+html {
+	font-family: roboto;
+	font-size: 10px;
+	position: fixed;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+ 	height: 100%;
+  	background-color: rgb(212, 212, 62);
+  	z-index: -1;
+}
+
+header {
+	font-family: roboto;
+	display: grid;
+	width: 100%;
+	height: 100%;
+	grid-template-columns: 40% 5% 10% 5% 40%;
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+.settings {
+	background-color: #72797a;
+	width: 100%;
+	height: 30px;
+	display: flex;
+	cursor: pointer;
+    border-bottom: solid 2px #373737; 
+}
+
+.settings:hover {
+	color: white;
+}
+
+.timer-container {
+	background-color: #72797a;
+	width: 100%;
+	height: 30px;
+	display: flex; 
+    border-bottom: solid 2px #373737; 
+}
+
+.timer-icon {
+	display: flex;
+	align-items: center;
+}
+
+.timer-icon img {
+	width: 30px;
+}
+
+.timer-count {
+	background-color: #72797a;
+	width: 100%;
+	height: 30px;
+    font-size: 2.5rem;
+    border-bottom: solid 2px #373737; 
+}
+
+.restart-game {
+	width: 100%;
+	height: 30px;
+	background-color: #72797a;
+    border-bottom: solid 2px #373737; 
+}
+
+.restart-game-image-container {
+	height: 30px;
+	width: 30px;
+	cursor: pointer;
+	background-image: url('../images/new-game.png');
+}
+
+.restart-game-image-container:hover {
+	background-image: url('../images/new-game-hover.png');
+}
+
+.help {
+	background-color: #72797a;
+	width: 100%;
+	height: 30px;
+	display: flex;
+	cursor: pointer;
+    border-bottom: solid 2px #373737; 
+}
+
+.help:hover {
+	color: white;
+}
+
+.settings-popup-container {
+	visibility: hidden;
+	text-align: center;
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+
+.settings-popup-content {
+    margin: 40px auto 0px auto;
+    width: 80%;
+    height: 320px;
+    padding: 10px;
+    background-color: #c5c5c5;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #000;
+    position: relative;
+    font-size: 1.8rem;
+}
+
+.settings-popup-content h2 {
+	padding: 40px 0 10px 0;
+}
+ 
+.settings-popup-exit {
+    position: absolute;
+  	top: 5px;
+  	right: 5px;
+  	width: 50px;
+  	height: 50px;
+  	border-radius: 5px;
+  	cursor: pointer;
+  	background-image: url('../images/popup-exit.png');
+}
+
+.settings-popup-exit:hover {
+	background-image: url('../images/popup-exit-hover.png');
+}
+
+.set-difficulty {
+	margin: 0 auto;
+	padding: 0;
+    width: 200px;
+    height: 50px;
+	background-color: #c62828;
+	display: flex;  
+	text-align: center;
+	line-height: 50px;
+}
+
+.normal-difficulty {
+	display: inline-block;
+	width: 100px;
+	height: 50px;
+	background-color: #2e7d32;
+	cursor: pointer;
+}
+
+.normal-difficulty:hover {
+	color: white;
+}
+
+.hard-difficulty {
+	display: inline-block;
+	width: 100px;
+	height: 50px;
+	background-color: #c62828;
+	cursor: pointer;
+}
+
+.hard-difficulty:hover {
+	color: white;
+}
+
+.set-card-color {
+	margin: 0 auto;
+	padding: 0;
+	width: 200px;
+	height: 50px;
+	background-color: #c62828;
+	display: flex;  
+}
+
+.card-color-1 {
+	display: inline-block;
+	width: 100px;
+	height: 50px;
+	background-color: #2e7d32;
+	cursor: pointer;
+}
+
+.card-color-2 {
+	display: inline-block;
+	width: 100px;
+	height: 50px;
+	background-color: #c62828;
+	cursor: pointer;
+}
+
+.help-popup-container {
+	text-align: center;
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+
+.help-popup-content {
+    margin: 40px auto 0px auto;
+    width: 80%;
+    height: 320px;
+    padding: 10px;
+    background-color: #c5c5c5;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #000;
+    position: relative;
+    font-size: 1.8rem;
+}
+
+.help-popup-content h2 {
+	padding: 40px 0 10px 0;
+}
+
+.help-popup-exit {
+	position: absolute;
+  	top: 5px;
+  	right: 5px;
+  	width: 50px;
+  	height: 50px;
+  	border-radius: 5px;
+  	cursor: pointer;
+	background-image: url('../images/popup-exit.png');
+}
+
+.help-popup-exit:hover {
+	background-image: url('../images/popup-exit-hover.png');
+}
+
+.win-popup-container {
+	text-align: center;
+	visibility: hidden;
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+
+.win-popup-content {
+    margin: 40px auto 0px auto;
+    width: 80%;
+    height: 320px;
+    padding: 10px;
+    background-color: #c5c5c5;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #000;
+    position: relative;
+    font-size: 1.8rem;
+}
+
+.win-popup-content h2 {
+	padding: 40px 0 10px 0;
+}
+
+.win-popup-exit {
+	position: absolute;
+  	top: 5px;
+  	right: 5px;
+  	width: 50px;
+  	height: 50px;
+  	border-radius: 5px;
+  	cursor: pointer;
+	background-image: url('../images/popup-exit.png');
+}
+
+.win-popup-exit:hover {
+	background-image: url('../images/popup-exit-hover.png');
+}
+
+.card-field {
+	padding-top: 3px;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(212, 212, 62);
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto;
+	grid-gap: 5px;
+}
+
+@media screen and (max-width: 800px) {
+	.card-field {
+		grid-template-columns: auto auto auto auto;
+	}
+	header {
+		grid-template-columns: 30% 10% 20% 10% 30%;
+	}
+	.help-popup-content {
+    	height: 480px;
+    	overflow: overlay;
+    }
+}
+
+.card {
+	background-color: #c62828;
+	border-radius: 5px;
+	width: 120px;
+	height: 150px;
+	transform-style: preserve-3d;
+	transition: all 0.4s;
+	border: solid 2px #373737;
+}
+.card img {
+	width: 90%;
+}
+
+@media screen and (max-height: 950px) {
+	.card-field {
+		grid-template-columns: auto auto auto auto;
+	}
+	.card {
+		width: 100px;
+		height: 120px;	
+	}
+}
+
+@media screen and (max-height: 750px) {
+	.card-field {
+		grid-template-columns: auto auto auto auto;
+	}
+	.card {
+		width: 80px;
+		height: 100px;	
+	}
+}
+
+@media screen and (max-height: 650px) {
+	.card-field {
+		grid-template-columns: auto auto auto auto;
+	}
+	.card {
+		width: 60px;
+		height: 85px;	
+	}
+}
+
+.front {
+	font-size: 10rem;
+	border-radius: 3px;
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	backface-visibility: hidden;  
+}
+
+.back {
+	font-size: 3rem;
+	border-radius: 3px;
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	width: 100%;
+	height: 100%;
+	background-color: #f5f5f5;
+	position: absolute;
+	display: flex;
+    align-items: center;
+    align-content: center; 
+    justify-content: center; 
+    overflow: auto; 
+	backface-visibility: hidden;
+	transform: rotateY(180deg);
+}
